@@ -68,9 +68,6 @@ jobs:
     #   echo "Run, Build Application using script"
     #   ./location_of_script_within_repo/buildscript.sh
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-        category: "/language:${{matrix.language}}"
         - name: Setup Node.js environment
   uses: actions/setup-node@v3.5.0
 - uses: actions/checkout@v3
